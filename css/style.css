@@ -1,0 +1,91 @@
+/* Keyframes */
+
+.anime1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: exemplo;
+    animation-duration: 4s;
+}
+
+@keyframes exemplo{
+    from{background-color: red;}
+    to{background-color: yellow;}
+}
+
+
+/* Usando porcentagem % */
+
+.anime2{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: exemplo2;
+    animation-duration: 4s;
+}
+
+@keyframes exemplo2{
+    0% {background-color: red;}
+    25% {background-color: yellow;}
+    50% {background-color: blue;}
+    100% {background-color: green;}
+}
+
+/* Mudando a posição */
+
+.anime3{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: exemplo3;
+    animation-duration: 4s;
+}
+
+@keyframes exemplo3{
+    0% {background-color: red; left:0px; top:0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}
+
+/* Animation-delay */
+
+.anime4{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: exemplo4;
+    animation-duration: 4s;
+    position: relative;
+    animation-delay: 2s;
+}
+
+@keyframes exemplo4{
+    0% {background-color: red; left:0px; top:0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}
+
+/* Número negativo */
+
+.anime5{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: exemplo5;
+    animation-duration: 4s;
+    animation-delay: -2s;
+}
+
+@keyframes exemplo5{
+    0% {background-color: red; left:0px; top:0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}
