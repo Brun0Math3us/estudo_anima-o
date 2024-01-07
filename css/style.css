@@ -89,3 +89,143 @@
     75% {background-color: green; left: 0px; top: 200px;}
     100% {background-color: red; left: 0px; top: 0px;}
 }
+
+/* Quantas vezes a animação deve ocorrer */
+
+.anime6{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: exemplo6;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+}
+
+@keyframes exemplo6{
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}
+
+/* Animação acontece infinitamente */
+
+.anime7{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: exemplo7;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exemplo7{
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}
+
+/* Animação acontece de forma reversa */
+
+.anime8{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: exemplo8;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes exemplo8{
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}
+
+/* Animação acontece primeiro para frente e depois para trás */
+
+.anime9{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: exemplo9;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes exemplo9{
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}
+
+/* Animação acontece primeiro para trás e depois para frente */
+
+.anime10{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: exemplo10;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes exemplo10 {
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: yellow; left: 200px; top: 0px;}
+    50% {background-color: blue; left: 200px; top: 200px;}
+    75% {background-color: green; left: 0px; top: 200px;}
+    100% {background-color: red; left: 0px; top: 0px;}
+}
+
+/* Durações das animações - animation-timing-function */
+
+#mover{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    animation-name: move;
+    position: relative;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+}
+
+.mover1{
+    animation-timing-function: linear;
+}
+
+.mover2{
+    animation-timing-function: ease;
+}
+
+.mover3{
+    animation-timing-function: ease-in;
+}
+
+.mover4{
+    animation-timing-function: ease-out;
+}
+
+.mover5{
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes move{
+    from {left: 0px;}
+    to {left: 300px;}
+}
